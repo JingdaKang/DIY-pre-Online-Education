@@ -1,0 +1,41 @@
+from django.contrib import admin
+from django.conf.urls import url, include
+from backend import views
+
+urlpatterns = [
+    url(r'login/', views.post_login),
+    url(r'register/', views.register),
+    url(r'user/', views.get_user),
+    url(r'update_info/', views.update_info),
+    url(r'password/', views.change_password),
+    url(r'avatar/', views.get_avatar),
+    url(r'avatarUpload/', views.upload_avatar),
+    url(r'reset_pass/', views.reset_password),
+    url(r'accounts/', views.get_account),
+    url(r'get_account_by_condition/', views.get_account_by_condition),
+    url(r'change_status/', views.change_status),
+    url(r'get_teacher/', views.get_teacher),
+    url(r'apply_class/', views.apply_class),
+    url(r'get_apply_classes/', views.get_apply_classes),
+    url(r'get_apply_class_by_condition/', views.get_apply_class_by_condition),
+    url(r'get_my_class/', views.get_my_class),
+    url(r'get_my_class_by_condition/', views.get_my_class_by_condition),
+    url(r'get_all_class/', views.get_all_class),
+    url(r'get_all_class_by_condition/', views.get_all_class_by_condition),
+    url(r'get_selected_class/', views.get_selected_class),
+    url(r'get_selected_class_by_condition/', views.get_selected_class_by_condition),
+    url(r'out_class/', views.out_class),
+    url(r'select_class/', views.select_class),
+    url(r'accept_apply/', views.accept_apply),
+    url(r'refuse_apply/', views.refuse_apply),
+    url(r'get_class_detail/', views.get_class_detail),
+    url(r'get_student_apply/', views.get_student_apply),
+    url(r'get_student_apply_by_condition/', views.get_student_apply_by_condition),
+    url(r'accept_student_apply/', views.accept_student_apply),
+    url(r'refuse_student_apply/', views.refuse_student_apply),
+    url(r'modify_course/', views.modify_course),
+    url(r'end_class/',views.end_class),
+    url(r'get_teacher_apply/',views.get_teacher_apply),
+    url(r'get_teacher_apply_by_condition/',views.get_teacher_apply_by_condition),
+
+]

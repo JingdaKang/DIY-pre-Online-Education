@@ -1,0 +1,9 @@
+$theme: rgb(255,0,0);
+
+$maxWidth: 1340px;
+$minWidth: 980px;
+
+:export {
+  theme: $theme;
+  textColor: #757575;
+}
