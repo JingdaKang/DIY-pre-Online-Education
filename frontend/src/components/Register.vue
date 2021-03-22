@@ -58,7 +58,7 @@
         }, 100)
       }
       const checkPassword = (rule, value, callback) => {
-        const mailReg = /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$/
+        const mailReg = /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*?_ ]).*$/
         if (!value) {
           return callback(new Error('密码不能为空'))
         }

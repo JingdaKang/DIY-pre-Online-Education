@@ -26,7 +26,7 @@ class User(AbstractUser):
     user_credit = models.IntegerField(verbose_name="贡献度", default=0)
 
     class Meta:
-        db_table = "user"
+        db_table = "user_backup"
         verbose_name = "用户"
         verbose_name_plural = verbose_name
 

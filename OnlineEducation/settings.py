@@ -111,9 +111,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'edu',
-        'USER': 'postgres',
-        'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
+        'USER': 'test',
+        'PASSWORD': 'test_totem@2020',
+        'HOST': '125.220.159.199',
         'PORT': '5432',
     }
 }
